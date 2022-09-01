@@ -24,6 +24,10 @@ h2{
 	font-size: 36px;
 }
 
+h3{
+	font-size: 20px;
+}
+
 p{
 	line-height: 1.7;
 	font-size: 18px;
@@ -32,6 +36,10 @@ p{
 
 ul{
 	list-style: none;
+}
+
+img{
+	width: 100%;
 }
 
 .container{
@@ -82,6 +90,8 @@ ul{
 }
 
 /*menu style start*/
+
+
 
 .menu__container{
 	box-shadow: 0px 2px 5px rgba(150, 150, 150, 0.47);
@@ -172,6 +182,14 @@ ul{
 	justify-content: space-between;
 }
 
+.banner__container .banner .left__banner-section{
+	flex-basis: 50%;
+}
+
+.banner__container .banner .right__banner-section{
+	flex-basis: 50%;
+}
+
 .banner__container .banner h4{
 	color: rgb(102, 0, 102);
 }
@@ -195,8 +213,9 @@ ul{
 
 /* service section */
 .service__area{
-	padding: 100px 0;
+	padding: 80px 0;
 }
+
 
 .services{
 	
@@ -240,6 +259,12 @@ ul{
 
 
 /* category section */
+.category__container{
+	background: rgb(241, 252, 255);
+}
+.category__area{
+	padding: 80px 0;
+}
 .categories{
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
@@ -256,6 +281,111 @@ ul{
 	color: rgb(13, 1, 32);
 }
 
+
+/* product sestion */
+.product_area{
+	padding: 80px 0;
+}
+
+.products{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+}
+
+.products .product{
+	background: #fff;
+	box-shadow: 0px 0px 5px 0px rgba(134, 134, 134, 0.75);
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.products .product .text{
+	padding: 15px;
+}
+
+
+.products .product .text p{
+	font-size: 14px;
+}
+
+.products .product .text .price{
+	font-size: 18px;
+}
+
+
+.products .product .text .price span{
+	color: rgb(247, 1, 1);
+	text-decoration: line-through;
+	float: right;
+}
+
+.products .product .order{
+	width: 100%;
+	background: rgb(0, 183, 255);
+	text-align: center;
+	color: #fff;
+	padding: 10px 0;
+	transition: all .3s linear;
+}
+
+.products .product .order:hover{
+	background: rgb(1, 140, 196);
+}
+
+
+/* footer section */
+.footer__container{
+	background: rgb(13, 1, 32);
+}
+
+
+.footer{
+	padding: 80px 0;
+	color: #fff;
+	display: flex;
+	gap: 30px;
+	justify-content: space-between;
+
+}
+
+.footer .widget-1{
+	flex-basis: 50%;
+}
+.footer .widget-1 .logo{
+	width: 120px;
+	margin-bottom: 20px;
+}
+
+
+.footer .widget-2{
+	flex-basis: 50%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-menu h3{
+	margin-bottom: 20px;
+}
+
+
+.footer-menu a{
+	color: #fff;
+}
+
+.footer-menu ul{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.bottom-footer{
+	color: #fff;
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 5px;
+	border-top: 1px solid #fff;
+}
 
 
 
