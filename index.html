@@ -4,9 +4,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Class 11 css</title>
 	<link rel="stylesheet" href="font/css/all.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -28,7 +30,10 @@
 					</ul>
 				</nav>
 
-				<a href="#" class="login">Login</a>
+				<div class="menu-btn">
+					<a href="#" class="login"><span class="text">Login </span><span class="icon"><i class="fa-solid fa-user"></i></span></a>
+					<a href="#" class="login" id="menu_button"><i class="fa-solid fa-bars"></i></a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -316,6 +321,31 @@
 	</div>
 
 
+
+	<script src="js/jquery-3.6.1.min.js"></script>
+
+	<script>
+
+		// sticky header
+		$(window).scroll(function () {
+			let navbar = $('#menu'),
+				scroll = $(window).scrollTop();
+
+
+			if (scroll >= 200) {
+				navbar.addClass('sticky');
+			} else {
+				navbar.removeClass('sticky');
+			}
+
+		});
+
+		// menu
+		$('#menu_button').click(function (e) { 
+			e.preventDefault();
+			$('.nav').toggleClass('show');
+		});
+	</script>
 
 </body>
 
